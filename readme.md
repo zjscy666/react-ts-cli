@@ -1,1 +1,4 @@
-自己玩的
+```
+npm i  little-ghost-react-ts  -g
+lgrt c <AppName>
+```

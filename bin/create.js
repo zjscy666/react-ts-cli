@@ -47,7 +47,6 @@ function createProject(dir) {
         .pipe(_fs.dest(dir))
         .on('end', function() {
           const AppName = basename(dir);
-        // start install, or  user do it bySelf
           message.info('install packages');
           require('./download')({
             success: initComplete.bind(null, AppName),

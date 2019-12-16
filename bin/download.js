@@ -3,7 +3,6 @@ const which = require('which');
 function install({command, success, cwd, params}) {
   params = params || [];
   const _install = require('child_process').spawn(command, params, {
-    // keep color
     cwd,
     stdio: 'inherit',
   });
